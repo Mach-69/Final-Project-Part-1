@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learning and Testing - About Us</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-wrapper">
+      <img src="logo.png" alt="Logo" class="logo" width="100" height="100">
+      <span class="logo-title">Learning and Testing - Awareness Group</span>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="filler.html" class="stand-btn">Make a Stand</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT HERO (with image inline in heading) -->
+  <section class="about-hero">
+    <h2>
+      LEARNING AND TESTING
+    </h2>
+    <h1>TRUE LEARNING MUST HAVE TRUE TESTING; TRUE TESTING REQUIRES TRUE LEARNING</h1>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>About Us</h2>
+    <h2>FAQ's (Frequently Asked Questions)</h2>
+    <div class="accordion">
+      <details>
+        <summary>Who is the owner of LT?</summary>
+        <p>I am Herald P. Bulaclac, the founder of L.T. I am currently a scholar at the Philippine Science High School, still exploring what I will pursue in college and beyond. My earlier experience as a student journalist in elementary school shaped my skills in communication and advocacy, which now serve as a strong foundation for leading this campaign for quality education.</p>
+        <img src="idofM.jpg" alt="ID of Herald P. Bulaclac" width="250px" height="250px">
+      </details>
+
+      <details>
+        <summary>Why did you make this website?</summary>
+        <p>As quality education is our advocacy, our company LT temporarily changed to give public awareness instead of publishing books. With the continuous 
+          downfall of literacy rates in the Philippines, we decided that being a publishing company won’t increase intelligence.</p>
+      </details>
+
+      <details>
+        <summary>What is the background of this "agency"?</summary>
+        <p>LT was founded in 1970 in Panabo City, with a mission to spread education in areas of Mindanao. 
+          It launched libraries in Lanao del Norte in 1973, and later expanded to Davao City in 2015 with a publishing bookroom and library in Mintal. 
+          With its swift success, it changed to online publishing to transport books to various regions of Mindanao. During the pandemic, LT switched plans and made public awareness campaigns that’s still going today.</p>
+      </details>
+
+      <details>
+        <summary>Where can we find you?</summary>
+        <p><strong>Main Branch (Panabo)</strong><br>
+           Km. 4 Panabo National Highway, Brgy. San Francisco, Panabo City, Davao del Norte, 8105<br>
+           📞 +63 9857815401 — 📘 Facebook: LT Panabo
+        </p>
+
+        <p><strong>Lanao Branch</strong><br>
+           Andres Bonifacio Street, Brgy. Pala-o, Iligan City, Lanao del Norte, 9200<br>
+           📞 +63 8971995140 — 📘 Facebook: LT Iligan
+        </p>
+
+        <p><strong>Davao Branch</strong><br>
+           Block 12, Lot 23, Greenwoods Subdivision, Mintal, Tugbok District, Davao City, 8000<br>
+           📞 +63 9424207265 — 📘 Facebook: LT Davao
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="logo.png" alt="Logo" class="footer-logo" width="80" height="80">
+    <div class="socials">
+      <p>Recommended Websites</p>
+      <a href="https://www.savethechildren.org.ph/" target="_blank">Save the Children Philippines</a>
+      <a href="https://educationoutloud.org/grantees/youth-advocacy-drive-educational-advocacy-philippines/" target="_blank">Education Out Loud</a>
+    </div>
+    <div class="links">
+      <p>© 2024 Learning and Testing. All rights reserved.</p>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </footer>
+
+  <script>
+    // Accordion: only one open at a time
+    const details = document.querySelectorAll(".accordion details");
+    details.forEach((d) => {
+      d.addEventListener("toggle", () => {
+        if (d.open) {
+          details.forEach((other) => {
+            if (other !== d) other.removeAttribute("open");
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
